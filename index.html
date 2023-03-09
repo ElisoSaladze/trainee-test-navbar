@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div  class="text">
+            <p>welcome to my brand new shop</p>
+        </div>
+        <div class="nav-parent">
+            <nav class="navigation">
+                <div onclick="showNavigation()" class="nav-icon">
+                    <img src="./img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" alt="nav-icon" />
+                </div>
+                <ul class="list" id="nav">
+                    <li><a href="#">Home</a></li>
+                    <li ><a href="#">Products</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+                <h1 class="none">HTML & JS</h1>
+                <h1 class="mobile">H & j</h1>
+                <div class="buttons">
+                    <button class="none"><img src="./img/search-svgrepo-com.svg" alt="search" /></button>
+                    <button class="none"><img src="./img/9004670_bag_shopping_store_shop_icon.svg" alt="shopping-bag" /></button>
+                    <button><img src="./img/shopping-cart-svgrepo-com.svg" alt="shopping-cart" /></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        function showNavigation() {
+            var nav = document.getElementById("nav");
+            if (nav.className === "list") {
+                nav.className += " active";
+                console.log(nav.className);
+            } else {
+                nav.className = "list";
+                console.log(nav.className);
+            }
+        }
+    </script>
+</body>
+</html>
